@@ -76,10 +76,16 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 break;
+            case "x":
+                if(btnTxt.equals("x")){
+                    dataToCalculate+="*";
+                }
+                break;
             case "=":
                 String finalRes = getResult(dataToCalculate);
                 display.setText(finalRes);
                 return;
+
             default:
                 if (dataToCalculate.equals("0")) {
                     dataToCalculate = "";
